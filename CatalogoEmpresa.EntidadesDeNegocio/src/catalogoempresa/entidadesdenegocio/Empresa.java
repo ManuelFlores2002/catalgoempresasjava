@@ -1,105 +1,85 @@
 package catalogoempresa.entidadesdenegocio;
 
-import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Empresa {
-    private int id;
-    private int idRol;
-    private String nombre;
-    private String apellido;
-    private String login;
-    private String password;
-    private byte estatus;
-    private LocalDate fechaRegistro;
-    private String top_aux;
+    private int Id;
+    private int IdContacto;
+    private String Nombre;
+    private String Rubro;
+    private String Categoria;
+    private String Departamento;
+    private int Top_aux;
     private Contacto contacto;
 
     public Empresa() {
     }
 
-    public Empresa(int id, int idRol, String nombre, String apellido, String login, String password, byte estatus, LocalDate fechaRegistro, String top_aux, Contacto contacto) {
-        this.id = id;
-        this.idRol = idRol;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.login = login;
-        this.password = password;
-        this.estatus = estatus;
-        this.fechaRegistro = fechaRegistro;
-        this.top_aux = top_aux;
+    public Empresa(int Id, int IdContacto, String Nombre, String Rubro, String Categoria, String Departamento, int Top_aux, Contacto contacto) {
+        this.Id = Id;
+        this.IdContacto = IdContacto;
+        this.Nombre = Nombre;
+        this.Rubro = Rubro;
+        this.Categoria = Categoria;
+        this.Departamento = Departamento;
+        this.Top_aux = Top_aux;
         this.contacto = contacto;
     }
 
     public int getId() {
-        return id;
+        return Id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(int Id) {
+        this.Id = Id;
     }
 
-    public int getIdRol() {
-        return idRol;
+    public int getIdContacto() {
+        return IdContacto;
     }
 
-    public void setIdRol(int idRol) {
-        this.idRol = idRol;
+    public void setIdContacto(int IdContacto) {
+        this.IdContacto = IdContacto;
     }
 
     public String getNombre() {
-        return nombre;
+        return Nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getRubro() {
+        return Rubro;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setRubro(String Rubro) {
+        this.Rubro = Rubro;
     }
 
-    public String getLogin() {
-        return login;
+    public String getCategoria() {
+        return Categoria;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public void setCategoria(String Categoria) {
+        this.Categoria = Categoria;
     }
 
-    public String getPassword() {
-        return password;
+    public String getDepartamento() {
+        return Departamento;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setDepartamento(String Departamento) {
+        this.Departamento = Departamento;
     }
 
-    public byte getEstatus() {
-        return estatus;
+    public int getTop_aux() {
+        return Top_aux;
     }
 
-    public void setEstatus(byte estatus) {
-        this.estatus = estatus;
-    }
-
-    public LocalDate getFechaRegistro() {
-        return fechaRegistro;
-    }
-
-    public void setFechaRegistro(LocalDate fechaRegistro) {
-        this.fechaRegistro = fechaRegistro;
-    }
-
-    public String getTop_aux() {
-        return top_aux;
-    }
-
-    public void setTop_aux(String top_aux) {
-        this.top_aux = top_aux;
+    public void setTop_aux(int Top_aux) {
+        this.Top_aux = Top_aux;
     }
 
     public Contacto getContacto() {
